@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" media="screen and (max-width:1377px)" href="/css/phonecontact.css">
+    <!-- if above max-width 1377px causes problem write 1905px -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="mainheading"><h2>PORTFOLIO</h2></div>
+    <ul class="navbarlist">
+        <li class="navbarlistitem"><a href="/index.html">HOME</a></li>
+        <li class="navbarlistitem"><a href="/about.html">ABOUT</a></li>
+        <li class="navbarlistitem"><a href="/project.html">PROJECTS</a></li>
+        <li class="navbarlistitem"><a href="#" id="active">CONTACT</a></li>
+    </ul>
+</nav>
+<section id="contactsection">
+    <h1 class="contactheading"> <span id="hi">Hi,</span> nice to meet you</h1>
+    <!-- <form action="noaction" id="contactform">
+        <input id="contactname" type="text" class="nameemail" placeholder="YOUR NAME">
+        <input type="email" class="nameemail" placeholder="YOUR EMAIL ID.">
+        <textarea id="contactmessage" class="nameemail" cols="30" rows="10" placeholder="YOUR MESSAGE"></textarea>
+        <input id="submitbutton" type="submit" value="submit">
+    </form> -->
+
+    <form id="contactform" action="https://formsubmit.co/ankurkumarsingh19@gmail.com" method="POST">
+        <input id="contactname" class="nameemail" type="text" name="name" placeholder="YOUR NAME" required>
+        <input class="nameemail" type="email" name="email" placeholder="YOUR EMAIL ID" required>
+        <input id="contactmessage" class="nameemail" type="text" name="message" placeholder="YOUR SUBJECT" required>
+        <input type="hidden" name="_captcha" value="false">
+        <button id="submitbutton" type="submit">Send</button>
+   </form>
+
+    <div class="socialmedia">
+        <button class="button"><img id="socialmediaiconinsta" src="/images/instagramimage.png" alt="insta" type="button" onclick="window.open('https://www.instagram.com/ankur_kr.singh/')" ></button>
+        <button class="button"><img id="socialmediaiconwhatsapp" src="/images/whatsappimage.png" alt="whatsapp" type="button" onclick="window.open('https://api.whatsapp.com/send?phone=917903076687')"></button>
+        <button class="button"><img id="socialmediaiconwhatsapp" src="/images/portfolio.png" alt="Qr"></button>
+    </div>
+
+</section>
+<footer id="footer">
+    <div id="divfooter">&copy;<pre> Designed by Ankur Kumar Singh</pre></div>
+</footer>
+</body>
+</html>
